@@ -27,9 +27,17 @@ const myArrayIndex = [
     [[10, 11, 12], 13, 14],
 ];
 
-const myData = myArrayIndex[2][1];
+let myData = myArrayIndex[2][1];
 
 
 /*Manipulate Arrays With push()*/
 const myArrayPush = [["John", 23], ["cat", 2]];
 myArrayPush.push(["dog", 3])
+
+//Manipulate Arrays With pop()
+const myArrayPop = [["John", 23], ["cat", 2]];
+let removedFromMyArrayPop = myArrayPop.pop();
+
+//Manipulate Arrays With shift()
+const myArrayShift = [["John", 23], ["dog", 3]];
+removedFromMyArrayShift = myArrayShift.shift();
