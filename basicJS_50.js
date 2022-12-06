@@ -45,4 +45,17 @@ removedFromMyArrayShift = myArrayShift.shift()
 //Manipulate Arrays With unshift()
 const myArrayUnshift = [["John", 23], ["dog", 3]];
 myArrayUnshift.shift();
-myArrayUnshift.unshift(["Paul", 35]);;
+myArrayUnshift.unshift(["Paul", 35]);
+
+/*Next 50% of the test*/
+function nextInLine(arr, item) {
+    arr.push(item);
+    removedFromArray = arr.shift(0);
+    return removedFromArray;
+}
+
+let testArr = [1, 2, 3, 4, 5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
