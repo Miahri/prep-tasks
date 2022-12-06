@@ -50,7 +50,7 @@ myArrayUnshift.unshift(["Paul", 35]);
 /*Next 50% of the test*/
 function nextInLine(arr, item) {
     arr.push(item);
-    removedFromArray = arr.shift(0);
+    let removedFromArray = arr.shift(item);
     return removedFromArray;
 }
 
