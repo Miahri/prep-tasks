@@ -59,3 +59,29 @@ let testArr = [1, 2, 3, 4, 5];
 console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
+
+//Boolean type
+function trueOrFalse(wasThatTrue) {
+    if(wasThatTrue) {
+        return "Yes, that was true"
+    }
+    return "No, that was false"
+}
+
+//Comparison with the logical AND operator
+function testLogicalAnd(val) {
+    if (val <= 50 && val >= 25) {
+        return "Yes"
+    }
+    return "No";
+}
+testLogicalAnd(10);
+
+//Comparison with the logical OR operator
+function testLogicalOr(val) {
+    if (val < 10 || val > 20) {
+        return "Outside";
+    }
+    return "Inside";
+}
+testLogicalOr(15);
