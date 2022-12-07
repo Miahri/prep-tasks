@@ -175,3 +175,22 @@ function cc(card) {
 }
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+
+//Using Objects for lookup
+function phoneticLookup(val) {
+    let result = "";
+
+    const lookup = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicago",
+        "delta": "Denver",
+        "echo": "Easy",
+        "foxtrot": "Frank"
+    }
+    result = lookup[val];
+    return result;
+}
+
+phoneticLookup("charlie");
