@@ -317,3 +317,10 @@ lookUpProfile("Akira", "likes");
 function randomWholeNum() {
     return Math.floor(Math.random() * 10);
 }
+
+//parse int with a radix
+function convertToInteger(str) {
+    return parseInt(str, 2);
+}
+
+convertToInteger("10011");
