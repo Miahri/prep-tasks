@@ -312,3 +312,8 @@ function lookUpProfile(name, prop) {
 }
 
 lookUpProfile("Akira", "likes");
+
+//Random whole numbers
+function randomWholeNum() {
+    return Math.floor(Math.random() * 10);
+}
