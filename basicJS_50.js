@@ -258,3 +258,13 @@ function updateRecords(records, id, prop, value) {
 }
 
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+
+
+//Recursive
+function sum(arr, n) {
+    if (n > 0) {
+        return sum(arr, n - 1) + arr[n - 1];
+    } else {
+        return 0;
+    }
+}
